@@ -3,33 +3,45 @@ import { Player, TeamStats, TeamData } from "@/types";
 export const players: Player[] = [
   {
     id: "1",
-    name: "arT",
-    realName: "Andrei Piovezan",
-    role: "Capitão/Rifler",
-  },
-  {
-    id: "2",
-    name: "yuurih",
-    realName: "Yuri Santos",
+    name: "molodoy",
+    realName: "Gabriel Mattioli",
     role: "Rifler",
   },
   {
+    id: "2",
+    name: "yekindar",
+    realName: "Mareks Gaļinskis",
+    role: "Entry Fragger",
+  },
+  {
     id: "3",
+    name: "FalleN",
+    realName: "Gabriel Toledo",
+    role: "AWPer/Capitão",
+  },
+  {
+    id: "4",
     name: "KSCERATO",
     realName: "Kaike Cerato",
     role: "Rifler",
   },
   {
-    id: "4",
-    name: "drop",
-    realName: "André Abreu",
-    role: "Entry Fragger",
+    id: "5",
+    name: "yuurih",
+    realName: "Yuri Santos",
+    role: "Rifler",
   },
   {
-    id: "5",
-    name: "HEN1",
-    realName: "Henrique Teles",
-    role: "AWPer",
+    id: "6",
+    name: "skullz",
+    realName: "Lucas Lopes",
+    role: "Rifler/Substituto",
+  },
+  {
+    id: "7",
+    name: "chelo",
+    realName: "André Nascimento",
+    role: "Rifler/Substituto",
   },
 ];
 

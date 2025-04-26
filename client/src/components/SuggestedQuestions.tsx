@@ -32,8 +32,8 @@ export default function SuggestedQuestions({
     if (content.includes("line-up") || content.includes("lineup") || content.includes("jogadores") || content.includes("esquadrão")) {
       return [
         "Quem é o melhor jogador?",
-        "Qual o papel do arT no time?",
-        "Quanto tempo eles jogam juntos?"
+        "Quanto tempo o FalleN joga na FURIA?",
+        "Como o yekindar se adaptou ao time?"
       ];
     } 
     else if (content.includes("próximo jogo") || content.includes("navi") || content.includes("partida")) {
