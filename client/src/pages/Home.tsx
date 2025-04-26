@@ -5,6 +5,7 @@ import ChatInput from "@/components/ChatInput";
 import ChatMessage from "@/components/ChatMessage";
 import TeamInfo from "@/components/TeamInfo";
 import SuggestedQuestions from "@/components/SuggestedQuestions";
+import Footer from "@/components/Footer";
 import { useChat } from "@/hooks/useChat";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -96,6 +97,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 }
