@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 export function useChat() {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [isTyping, setIsTyping] = useState(false);
+  const [lastBotMessage, setLastBotMessage] = useState<string>(initialMessages[0].text);
 
   // Send a message and get a response
   const sendMessage = useCallback((text: string) => {
@@ -36,6 +37,7 @@ export function useChat() {
       };
       
       setIsTyping(false);
+      setLastBotMessage(botResponse);
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     }, 1500);
   }, []);
@@ -44,5 +46,6 @@ export function useChat() {
     messages,
     isTyping,
     sendMessage,
+    lastBotMessage
   };
 }

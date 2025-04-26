@@ -4,12 +4,18 @@ import Header from "@/components/Header";
 import ChatInput from "@/components/ChatInput";
 import ChatMessage from "@/components/ChatMessage";
 import TeamInfo from "@/components/TeamInfo";
+import SuggestedQuestions from "@/components/SuggestedQuestions";
 import { useChat } from "@/hooks/useChat";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
-  const { messages, isTyping, sendMessage } = useChat();
+  const { messages, isTyping, sendMessage, lastBotMessage } = useChat();
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  
+  // Handle clicking a suggested question
+  const handleSelectQuestion = (question: string) => {
+    sendMessage(question);
+  };
   
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -75,6 +81,15 @@ export default function Home() {
                 </div>
               </ScrollArea>
               
+              {/* Suggested questions */}
+              <div className="px-4 py-2 border-t border-[hsl(var(--furia-light))]">
+                <SuggestedQuestions 
+                  onSelectQuestion={handleSelectQuestion} 
+                  lastMessageType={messages.length > 0 ? messages[messages.length - 1].sender : "bot"}
+                  lastMessageContent={lastBotMessage}
+                />
+              </div>
+
               {/* Chat input */}
               <ChatInput onSendMessage={sendMessage} />
             </div>
