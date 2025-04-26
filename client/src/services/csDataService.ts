@@ -4,48 +4,42 @@ import { Player, TeamStats, TeamData } from '@/types';
 export const currentPlayers: Player[] = [
   {
     id: "1",
-    name: "arT",
-    realName: "Andrei Piovezan",
-    role: "Capitão/Entry Fragger",
-  },
-  {
-    id: "2",
     name: "yuurih",
     realName: "Yuri Santos",
     role: "Rifler",
   },
   {
-    id: "3",
+    id: "2",
     name: "KSCERATO",
     realName: "Kaike Cerato",
     role: "Rifler",
   },
   {
-    id: "4",
+    id: "3",
     name: "molodoy",
     realName: "David Bermudez",
     role: "Rifler",
   },
   {
-    id: "5",
+    id: "4",
     name: "yekindar",
     realName: "Mareks Gaļinskis",
     role: "Rifler",
   },
   {
-    id: "6",
+    id: "5",
     name: "FalleN",
     realName: "Gabriel Toledo",
     role: "AWPer/IGL",
   },
   {
-    id: "7",
+    id: "6",
     name: "skullz",
     realName: "Felipe Medeiros",
     role: "Reserva/AWPer",
   },
   {
-    id: "8",
+    id: "7",
     name: "chelo",
     realName: "Marcelo Cespedes",
     role: "Reserva/Rifler",
@@ -75,7 +69,7 @@ export function getFuriaResponse(query: string): string {
     return `A FURIA vai jogar o ${currentTeamStats.nextMatch}! Vai ser um torneio insano com os melhores times do mundo! 🔥`;
   } 
   else if (lowerQuery.includes('jogadores') || lowerQuery.includes('linha') || lowerQuery.includes('lineup') || lowerQuery.includes('time')) {
-    return 'Nosso esquadrão tá MONSTRO:\n\n• arT: O capitão louco que não tem medo de nada! 🔫\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• FalleN: O Godfather do CS brasileiro! 👑\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥';
+    return 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL e AWPer! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥';
   }
   else if (lowerQuery.includes('função do fallen') || lowerQuery.includes('papel do fallen')) {
     return 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈';
@@ -90,7 +84,7 @@ export function getFuriaResponse(query: string): string {
     return 'Nossa equipe tá forte, mas o BLAST Premier Spring Final vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪';
   }
   else if (lowerQuery.includes('último confronto') || lowerQuery.includes('enfrentaram')) {
-    return 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o arT tá liderando muito bem com suas estratégias agressivas! 🔥';
+    return 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o FalleN tá liderando muito bem com suas estratégias e experiência! 🔥';
   }
   else if (lowerQuery.includes('quais torneios') || lowerQuery.includes('torneios depois')) {
     return 'Depois do BLAST Premier Spring Final, a FURIA vai se preparar pro ESL Challenger em Melbourne e depois pro Major RMR! 🌎 Calendário lotado de torneios importantes! Muito CS de alto nível vindo aí!';
