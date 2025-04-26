@@ -11,34 +11,34 @@ export function getBotResponse(message: string): string {
   const lowerMessage = message.toLowerCase();
   
   if (lowerMessage.includes('próximo jogo') || lowerMessage.includes('próxima partida')) {
-    return 'Bora ver os caras destruir a NAVI dia 14 de julho, 15h (horário de Brasília) na ESL Pro League! Tá chegando! 🔥';
+    return 'A FURIA vai jogar o BLAST Premier Spring Final em junho! Vai ser um torneio insano com os melhores times do mundo! 🔥';
   } 
   else if (lowerMessage.includes('jogadores') || lowerMessage.includes('linha') || lowerMessage.includes('lineup') || lowerMessage.includes('time')) {
-    return 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Verdadeiro Final Boss do CS, capitão e AWPer! 🐐\n• KSCERATO: A máquina de headshots, nunca erra! 🤯\n• yuurih: Monstro do rifle, clutcher de elite! 💯\n• yekindar: Esse letão chegou destruindo tudo, entry absurdo! 💥\n• molodoy: O prodígio da nova geração! 🔥\n\nAinda temos skullz e chelo como substitutos prontos pra entrar e acabar com o game! A FURIA tá com um squad INSANO! 💪';
+    return 'Nosso esquadrão tá MONSTRO:\n\n• arT: O capitão louco que não tem medo de nada! 🔫\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• HEN1: O AWPer lendário que voltou pra casa! 🎯\n• exit: O jovem talento que chegou pra destruir! ⚡\n\nKSCERATO e yuurih são simplesmente absurdos, todo mundo sabe que são fera demais!';
   }
-  else if (lowerMessage.includes('quanto tempo o fallen') || lowerMessage.includes('fallen joga na furia')) {
-    return 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo! 📈';
+  else if (lowerMessage.includes('função do hen1') || lowerMessage.includes('papel do hen1')) {
+    return 'O HEN1 é nosso AWPer principal e é monstro! 🎯 O cara voltou pra FURIA em 2023 depois de passar por outros times, e trouxe toda aquela precisão com a AWP que a gente conhece! Além de ser um sniper absurdo, ele também ajuda muito na estratégia do time! 📈';
   }
-  else if (lowerMessage.includes('yekindar se adaptou') || lowerMessage.includes('adaptação do yekindar')) {
-    return 'O yekindar se adaptou MUITO BEM! Os caras já estão se comunicando melhor que nunca, e ele já pegou o jeito brasileiro de jogar! 🇱🇻🤝🇧🇷 Aliás, ele já tá até tomando açaí e aprendendo a dançar pagode! 😂';
+  else if (lowerMessage.includes('exit se adaptou') || lowerMessage.includes('adaptação do exit')) {
+    return 'O exit chegou se encaixando MUITO BEM! O garoto tem um potencial absurdo, entry fragger com reflexo inacreditável! 💥 Ele já tá jogando com o time como se tivesse anos na FURIA. A química entre ele e os outros jogadores é muito boa! 🤝';
   }
   else if (lowerMessage.includes('quais são as chances de vitória') || lowerMessage.includes('chance de ganhar')) {
-    return '100% DE CHANCE! 😎 A FURIA tá ON FIRE e a NAVI tá sofrendo com inconsistência! Com o FalleN liderando e o KSCERATO destruindo, nem tem como perder! #SóAcredita 💪';
+    return 'Nossa equipe tá forte, mas o BLAST Premier Spring Final vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪';
   }
   else if (lowerMessage.includes('último confronto') || lowerMessage.includes('enfrentaram')) {
-    return 'No último confronto contra a NAVI, a FURIA venceu por 2-0! Foi uma AULA de CS! O KSCERATO fechou com 27 frags só no primeiro mapa! Os caras da NAVI nem sabiam o que tava acontecendo! 🔥';
+    return 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o arT tá liderando muito bem com suas estratégias agressivas! 🔥';
   }
   else if (lowerMessage.includes('quais torneios') || lowerMessage.includes('torneios depois')) {
-    return 'Depois da ESL Pro League, a FURIA vai pro BLAST Premier Fall Groups em agosto e depois já vai se preparar pro Major do final do ano! 🌎 Calendário lotado, mano!';
+    return 'Depois do BLAST Premier Spring Final, a FURIA vai se preparar pro ESL Challenger em Melbourne e depois pro Major RMR! 🌎 Calendário lotado de torneios importantes! Muito CS de alto nível vindo aí!';
   }
   else if (lowerMessage.includes('como chegar ao top 1') || lowerMessage.includes('chegar ao primeiro lugar')) {
-    return 'Pra chegar ao Top 1, só precisa seguir DOMINANDO como estão agora! Com FalleN no comando, mais algumas semanas pra ajustar as estratégias, e logo a FURIA desbanca a Vitality e fica no topo! 👑';
+    return 'Pra chegar ao Top 1, a FURIA precisa manter a consistência e seguir evoluindo como time! 🔝 Com o lineup atual cada vez mais entrosado e o guerri trabalhando forte, logo podemos chegar lá! A mentalidade é de campeão! 👑';
   }
   else if (lowerMessage.includes('quem está acima') || lowerMessage.includes('times acima')) {
-    return 'Acima da FURIA só tem Vitality, FaZe, NAVI e Heroic, mas isso não vai durar muito tempo! 😏 A gente já tá subindo e em breve vamos ultrapassar eles! Tô te falando, esse ano o Top 1 é nosso! 💙';
+    return 'Atualmente, times como Vitality, FaZe, NAVI, G2, Team Spirit, Complexity e Monte estão na frente no ranking, mas isso tá sempre mudando! 🔄 A FURIA tem tudo pra subir nas próximas semanas com bons resultados! 📈';
   }
   else if (lowerMessage.includes('times são rivais') || lowerMessage.includes('maior rival')) {
-    return 'NAVI e a Imperial são as maiores rivais! Com a NAVI é sempre jogo de milhões, e contra a Imperial é a grande rivalidade brasileira! Os duelos contra o time do fer, fnx e VINI sempre são épicos! 🇧🇷';
+    return 'No cenário nacional, a Imperial e a MIBR são rivais tradicionais da FURIA! 🇧🇷 Já internacionalmente, sempre temos jogos disputados contra NAVI, Liquid e times europeus top! A rivalidade com times brasileiros sempre tem aquela energia especial! 💙';
   }
   else if (lowerMessage.includes('estatísticas dele') || lowerMessage.includes('stats do kscerato')) {
     return 'KSCERATO tá com média de 1.23 de rating, 87.5 ADR e 70% de headshot! 📊 É MUITA PRECISÃO! O maluco é uma MÁQUINA! Os analistas dizem que ele é top 5 do mundo nos últimos meses! 🌟';
@@ -74,16 +74,16 @@ export function getBotResponse(message: string): string {
     return 'A FURIA surgiu em 2017, fundada pelo Jaime "raizen" Pádua e Andrey "KSCERATO" Cinisello! No começo era um projeto pequeno, mas logo cresceu e se tornou potência! 🚀 Hoje é a maior org de esports do Brasil e tá dominando o CS mundial! 💙';
   }
   else if (lowerMessage.includes('rank') || lowerMessage.includes('posição') || lowerMessage.includes('mundial')) {
-    return 'FURIA tá TOP 5 MUNDIAL, mano! Isso mesmo, 5º lugar no ranking do HLTV! Subindo cada vez mais! 🚀';
+    return 'FURIA tá no TOP 8 MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!';
   }
   else if (lowerMessage.includes('torneio') || lowerMessage.includes('campeonato') || lowerMessage.includes('competição')) {
-    return 'Os caras tão na ESL Pro League Season 19 agora e já tão se preparando pro BLAST Premier Fall Groups em agosto. Agenda lotada de Tier 1! 📅';
+    return 'Nossa agenda tá cheia de campeonatos Tier 1! Acabamos de participar da ESL Pro League e agora estamos nos preparando pro BLAST Premier Spring Final! 📅 Depois vem mais torneios importantes, tamo com a agenda lotada!';
   }
   else if (lowerMessage.includes('histórico') || lowerMessage.includes('últimos jogos') || lowerMessage.includes('resultado')) {
-    return 'Últimos 10 jogos? 8 VITÓRIAS e só 2 derrotas! Os cara tão VOANDO! 🔥 Quem para a FURIA??';
+    return 'Nos últimos jogos tivemos 6 vitórias e 4 derrotas! O time tá se ajustando mas tá mostrando um CS muito bom! 🔥 Cada dia a equipe tá mais entrosada e mais forte!';
   }
   else if (lowerMessage.includes('melhor jogador') || lowerMessage.includes('destaque') || lowerMessage.includes('mvp')) {
-    return 'KSCERATO é o MONSTRO do time! O cara tá jogando muito! A precisão dele é absurda, não perde duel, não erra spray, é um alien! 👽';
+    return 'KSCERATO continua sendo o MONSTRO do time! O cara tá jogando muito! A precisão dele é absurda, não perde duel, não erra spray, é um alien! 👽 Mas o yuurih também tá destruindo demais nos últimos jogos!';
   }
   else if (lowerMessage.includes('mapa') || lowerMessage.includes('mapas')) {
     return 'Nuke e Mirage são as praias da FURIA! 75% de winrate nesses mapas! Quando os cara pegam esses mapas é GG já, nem precisa jogar! 😎';

@@ -3,53 +3,41 @@ import { Player, TeamStats, TeamData } from "@/types";
 export const players: Player[] = [
   {
     id: "1",
-    name: "molodoy",
-    realName: "Gabriel Mattioli",
-    role: "Rifler",
+    name: "arT",
+    realName: "Andrei Piovezan",
+    role: "Capitão/Rifler",
   },
   {
     id: "2",
-    name: "yekindar",
-    realName: "Mareks Gaļinskis",
-    role: "Entry Fragger",
-  },
-  {
-    id: "3",
-    name: "FalleN",
-    realName: "Gabriel Toledo",
-    role: "AWPer/Capitão",
-  },
-  {
-    id: "4",
-    name: "KSCERATO",
-    realName: "Kaike Cerato",
-    role: "Rifler",
-  },
-  {
-    id: "5",
     name: "yuurih",
     realName: "Yuri Santos",
     role: "Rifler",
   },
   {
-    id: "6",
-    name: "skullz",
-    realName: "Lucas Lopes",
-    role: "Rifler/Substituto",
+    id: "3",
+    name: "KSCERATO",
+    realName: "Kaike Cerato",
+    role: "Rifler",
   },
   {
-    id: "7",
-    name: "chelo",
-    realName: "André Nascimento",
-    role: "Rifler/Substituto",
+    id: "4",
+    name: "HEN1",
+    realName: "Henrique Teles",
+    role: "AWPer",
+  },
+  {
+    id: "5",
+    name: "exit",
+    realName: "Eduardo Pavesi",
+    role: "Entry Fragger",
   },
 ];
 
 export const teamStats: TeamStats = {
-  worldRanking: 5,
-  recentWins: 8,
-  recentLosses: 2,
-  nextMatch: "14/07 vs. NAVI",
+  worldRanking: 8,
+  recentWins: 6,
+  recentLosses: 4,
+  nextMatch: "BLAST Premier Spring Final",
 };
 
 export const teamData: TeamData = {
