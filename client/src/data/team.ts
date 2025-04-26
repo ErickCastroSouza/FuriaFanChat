@@ -5,7 +5,7 @@ export const players: Player[] = [
     id: "1",
     name: "arT",
     realName: "Andrei Piovezan",
-    role: "Capitão/AWPer",
+    role: "Capitão/Rifler",
   },
   {
     id: "2",
@@ -21,14 +21,14 @@ export const players: Player[] = [
   },
   {
     id: "4",
-    name: "chelo",
-    realName: "André Nascimento",
+    name: "drop",
+    realName: "André Abreu",
     role: "Entry Fragger",
   },
   {
     id: "5",
-    name: "saffee",
-    realName: "Rafael Costa",
+    name: "HEN1",
+    realName: "Henrique Teles",
     role: "AWPer",
   },
 ];
@@ -42,6 +42,6 @@ export const teamStats: TeamStats = {
 
 export const teamData: TeamData = {
   name: "FURIA Esports",
-  description: "FURIA Esports é uma organização brasileira de esports fundada em 2017, conhecida principalmente por sua equipe de Counter-Strike: Global Offensive.",
+  description: "FURIA Esports é uma organização brasileira de esports fundada em 2017, conhecida principalmente por sua equipe de Counter-Strike 2 (CS2), que vem conquistando destaque internacional.",
   coach: "Nicholas \"guerri\" Nogueira",
 };

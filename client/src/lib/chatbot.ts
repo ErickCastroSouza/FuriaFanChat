@@ -14,7 +14,7 @@ export function getBotResponse(message: string): string {
     return 'Bora ver os caras destruir a NAVI dia 14 de julho, 15h (horário de Brasília) na ESL Pro League! Tá chegando! 🔥';
   } 
   else if (lowerMessage.includes('jogadores') || lowerMessage.includes('linha') || lowerMessage.includes('lineup') || lowerMessage.includes('time')) {
-    return 'Nosso esquadrão tá MONSTRO:\n\n• arT: O capitão louco que não tem medo de nada! 🔫\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• chelo: Entry fragger que deixa o server em choque! ⚡\n• saffee: AWPer que não perdoa, é tiro e queda! 🎯\n\nKSCERATO e yuurih são simplesmente absurdos, todo mundo sabe que são fera demais!';
+    return 'Nosso esquadrão tá MONSTRO:\n\n• arT: O capitão louco que não tem medo de nada! 🔫\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• drop: O jovem que já chegou destruindo tudo! 💥\n• HEN1: O AWPer lendário que voltou pra casa! 🎯\n\nKSCERATO e yuurih são simplesmente absurdos, todo mundo sabe que são fera demais!';
   }
   else if (lowerMessage.includes('rank') || lowerMessage.includes('posição') || lowerMessage.includes('mundial')) {
     return 'FURIA tá TOP 5 MUNDIAL, mano! Isso mesmo, 5º lugar no ranking do HLTV! Subindo cada vez mais! 🚀';
