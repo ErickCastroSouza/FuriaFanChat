@@ -32,8 +32,8 @@ export default function SuggestedQuestions({
     if (content.includes("line-up") || content.includes("lineup") || content.includes("jogadores") || content.includes("esquadrão")) {
       return [
         "Quem é o melhor jogador?",
-        "Qual a função do HEN1 no time?",
-        "Como o exit se adaptou ao time?"
+        "Qual a função do FalleN no time?",
+        "Como o yekindar se adaptou ao time?"
       ];
     } 
     else if (content.includes("próximo jogo") || content.includes("navi") || content.includes("partida")) {
@@ -55,6 +55,13 @@ export default function SuggestedQuestions({
         "Quais são as estatísticas dele?",
         "Ele já ganhou algum MVP?",
         "Qual a função dele no time?"
+      ];
+    }
+    else if (content.includes("fallen") || content.includes("awper") || content.includes("liderança")) {
+      return [
+        "Como o FalleN chegou na FURIA?",
+        "Qual a influência do FalleN?",
+        "Me fale sobre o molodoy"
       ];
     }
     else if (content.includes("mapa") || content.includes("nuke") || content.includes("mirage")) {
