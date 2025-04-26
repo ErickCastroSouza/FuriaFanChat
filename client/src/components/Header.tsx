@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center">
           <Flame className="h-8 w-8 text-[hsl(var(--furia-blue))]" />
           <h1 className="ml-3 text-2xl font-bold tracking-wider">
-            <span className="text-[hsl(var(--furia-blue))]">FURIA</span> <span className="font-light">CS:GO</span>
+            <span className="text-[hsl(var(--furia-blue))]">FURIA</span> <span className="font-light">CS</span>
           </h1>
         </div>
         
@@ -53,7 +53,7 @@ export default function Header() {
                 <div className="flex items-center">
                   <Flame className="h-6 w-6 text-[hsl(var(--furia-blue))]" />
                   <h2 className="ml-2 text-xl font-bold">
-                    <span className="text-[hsl(var(--furia-blue))]">FURIA</span> CS:GO
+                    <span className="text-[hsl(var(--furia-blue))]">FURIA</span> CS
                   </h2>
                 </div>
                 <Button variant="ghost" onClick={() => setIsOpen(false)}>
