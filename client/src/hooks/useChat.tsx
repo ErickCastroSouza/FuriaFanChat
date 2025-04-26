@@ -1,6 +1,7 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { Message } from "@/types";
-import { initialMessages, getBotResponse, getCurrentTime } from "@/lib/chatbot";
+import { initialMessages, getCurrentTime } from "@/lib/chatbot";
+import { getFuriaResponse } from "@/services/csDataService";
 import { v4 as uuidv4 } from "uuid";
 
 export function useChat() {
@@ -27,7 +28,7 @@ export function useChat() {
     
     // Simulate bot response delay
     setTimeout(() => {
-      const botResponse = getBotResponse(text);
+      const botResponse = getFuriaResponse(text);
       
       const botMessage: Message = {
         id: uuidv4(),
