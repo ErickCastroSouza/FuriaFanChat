@@ -74,11 +74,17 @@ export function getFuriaResponse(query: string): string {
   else if (lowerQuery.includes('função do fallen') || lowerQuery.includes('papel do fallen')) {
     return 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈';
   }
-  else if (lowerQuery.includes('yekindar se adaptou') || lowerQuery.includes('adaptação do yekindar')) {
+  else if (lowerQuery.includes('yekindar se adaptou') || lowerQuery.includes('adaptação do yekindar') || lowerQuery.includes('como o yekindar')) {
     return 'O yekindar se adaptou MUITO BEM! Os caras já estão se comunicando melhor que nunca, e ele já pegou o jeito brasileiro de jogar! 🇱🇻🤝🇧🇷 Aliás, ele já tá até tomando açaí e aprendendo a dançar pagode! 😂';
   }
-  else if (lowerQuery.includes('molodoy') || lowerQuery.includes('sobre o molodoy')) {
+  else if (lowerQuery.includes('molodoy') || lowerQuery.includes('sobre o molodoy') || lowerQuery.includes('me fale sobre o molodoy')) {
     return 'O molodoy é PURO TALENTO! O garoto veio da Europa e já mostrou que não é brincadeira! 💪 Tem uma mira mecânica perfeita e reflexos absurdos! Com o FalleN dando call, ele só vai melhorar cada vez mais! 🚀';
+  }
+  else if (lowerQuery.includes('influência do fallen') || lowerQuery.includes('qual a influência')) {
+    return 'A influência do FalleN é GIGANTE! O cara trouxe toda a experiência de bicampeão mundial e tá passando conhecimento pros jovens. A liderança dele muda completamente o jogo da FURIA! 📈 Desde as táticas até a confiança do time, tudo melhorou com a chegada dele! 🧠';
+  }
+  else if (lowerQuery.includes('como o fallen chegou') || lowerQuery.includes('chegou na furia')) {
+    return 'O FalleN chegou na FURIA em janeiro de 2024! Foi um projeto ambicioso depois de anos jogando na América do Norte. Ele decidiu voltar pro cenário brasileiro e trazer toda a experiência para essa nova fase da equipe. A chegada dele foi um game changer! 🚀';
   }
   else if (lowerQuery.includes('quais são as chances de vitória') || lowerQuery.includes('chance de ganhar')) {
     return 'Nossa equipe tá forte, mas o BLAST Premier Spring Final vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪';
@@ -140,7 +146,7 @@ export function getFuriaResponse(query: string): string {
   else if (lowerQuery.includes('histórico') || lowerQuery.includes('últimos jogos') || lowerQuery.includes('resultado')) {
     return `Nos últimos ${currentTeamStats.recentWins + currentTeamStats.recentLosses} jogos tivemos ${currentTeamStats.recentWins} vitórias e ${currentTeamStats.recentLosses} derrotas! O time tá se ajustando mas tá mostrando um CS muito bom! 🔥 Cada dia a equipe tá mais entrosada e mais forte!`;
   }
-  else if (lowerQuery.includes('melhor jogador') || lowerQuery.includes('destaque') || lowerQuery.includes('mvp')) {
+  else if (lowerQuery.includes('melhor jogador') || lowerQuery.includes('destaque') || lowerQuery.includes('mvp') || lowerQuery.includes('quem é o melhor')) {
     return 'KSCERATO continua sendo o MONSTRO do time! O cara tá jogando muito! A precisão dele é absurda, não perde duel, não erra spray, é um alien! 👽 Mas o yuurih também tá destruindo demais nos últimos jogos!';
   }
   else if (lowerQuery.includes('mapa') || lowerQuery.includes('mapas')) {
