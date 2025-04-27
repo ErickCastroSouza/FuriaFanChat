@@ -26,7 +26,7 @@ export default function ChatMessage({ message }: ChatMessageProps) {
           className={`${
             isBot 
               ? "bg-[hsl(var(--furia-teal))] rounded-lg rounded-tl-none chat-bubble-bot" 
-              : "bg-[hsl(var(--furia-blue))] rounded-lg rounded-tr-none chat-bubble-user"
+              : "bg-[hsl(var(--furia-button))] rounded-lg rounded-tr-none chat-bubble-user"
           } p-3`}
         >
           <div className="font-inter whitespace-pre-wrap">{message.text}</div>

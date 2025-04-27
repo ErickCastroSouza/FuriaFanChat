@@ -33,7 +33,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6">
         
           <form action="https://www.furia.gg/">
-            <input type="submit" value="Loja"  className="bg-[hsl(var(--furia-blue))] px-4 py-2 text-black text-sm uppercase font-semibold cursor-pointer tracking-wide hover:bg-opacity-90 transition-colors" />
+            <input type="submit" value="Loja"  className="bg-[hsl(var(--furia-blue))] px-4 py-2 text-black text-sm uppercase font-semibold cursor-pointer rounded-lg tracking-wide hover:bg-opacity-90 transition-colors" />
           </form>
         </nav>
         
