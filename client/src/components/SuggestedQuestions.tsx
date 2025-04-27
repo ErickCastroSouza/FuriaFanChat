@@ -91,13 +91,13 @@ export default function SuggestedQuestions({
   const suggestedQuestions = getSuggestedQuestions();
 
   return (
-    <div className="flex flex-wrap gap-2 mt-2">
+    <div className="flex flex-wrap gap-1 sm:gap-2 mt-1 sm:mt-2">
       {suggestedQuestions.map((question, index) => (
         <Button
           key={index}
           variant="outline"
           size="sm"
-          className="text-sm px-3 py-1 border-[hsl(var(--furia-teal))] text-[hsl(var(--furia-teal))] hover:bg-[hsl(var(--furia-teal))] hover:text-white transition-colors suggested-question"
+          className="text-[11px] sm:text-xs md:text-sm px-2 sm:px-3 py-0.5 sm:py-1 border-[hsl(var(--furia-teal))] text-[hsl(var(--furia-teal))] hover:bg-[hsl(var(--furia-teal))] hover:text-white transition-colors suggested-question min-h-[24px] sm:min-h-[28px] rounded-full"
           onClick={() => onSelectQuestion(question)}
         >
           {question}

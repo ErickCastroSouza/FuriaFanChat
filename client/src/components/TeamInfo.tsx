@@ -11,7 +11,7 @@ export default function TeamInfo() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="character-container w-full md:w-2/5 lg:w-1/3 bg-gradient-to-b from-[hsl(var(--furia-gray))] to-[hsl(var(--furia-dark))] relative hidden md:block overflow-hidden"
+      className="character-container w-full h-full bg-gradient-to-b from-[hsl(var(--furia-gray))] to-[hsl(var(--furia-dark))] relative overflow-hidden flex flex-col"
     >
       {/* CS Character */}
       <div className="absolute left-0 bottom-0 h-[90%] z-0">

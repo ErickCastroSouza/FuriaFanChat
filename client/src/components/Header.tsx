@@ -15,7 +15,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-[hsl(var(--furia-dark))] py-3 px-4 border-b border-[hsl(var(--furia-light))] shadow-md">
+    <header className="bg-[hsl(var(--furia-dark))] py-2 sm:py-3 px-3 sm:px-4 border-b border-[hsl(var(--furia-light))] shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* FURIA Logo */}
         <div className="flex items-center">
@@ -24,7 +24,7 @@ export default function Header() {
             alt="FURIA Logo" 
             className="h-8 w-auto"
           />
-          <h1 className="ml-3 text-2xl font-bold tracking-wider">
+          <h1 className="ml-2 sm:ml-3 text-xl sm:text-2xl font-bold tracking-wider">
             <span className="text-[hsl(var(--furia-blue))]">FURIA</span> <span className="font-light">CS</span>
           </h1>
         </div>
@@ -59,17 +59,7 @@ export default function Header() {
               </div>
               
               <nav className="flex flex-col space-y-4">
-                {navLinks.map((link) => (
-                  <a 
-                    key={link.name}
-                    href={link.href} 
-                    className="text-[hsl(var(--text-light))] hover:text-[hsl(var(--furia-blue))] transition-colors py-2 text-lg uppercase font-semibold tracking-wide"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.name}
-                  </a>
-                ))}
-                <Button className="bg-[hsl(var(--furia-blue))] w-full py-2 mt-4 text-white text-lg uppercase font-semibold tracking-wide hover:bg-opacity-90 transition-colors">
+                <Button  className="bg-[hsl(var(--furia-blue))] w-full py-2 mt-4 text-black text-lg uppercase font-semibold tracking-wide hover:bg-opacity-90 transition-colors">
                   Loja
                 </Button>
               </nav>

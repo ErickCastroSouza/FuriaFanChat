@@ -21,18 +21,18 @@ export default function ChatMessage({ message }: ChatMessageProps) {
         </Avatar>
       )}
       
-      <div className="max-w-[80%]">
+      <div className="max-w-[80%] sm:max-w-[75%] md:max-w-[70%]">
         <div 
           className={`${
             isBot 
               ? "bg-[hsl(var(--furia-teal))] rounded-lg rounded-tl-none chat-bubble-bot" 
               : "bg-[hsl(var(--furia-button))] rounded-lg rounded-tr-none chat-bubble-user"
-          } p-3`}
+          } p-2 sm:p-3`}
         >
-          <div className="font-inter whitespace-pre-wrap">{message.text}</div>
+          <div className="font-inter whitespace-pre-wrap text-[13px] sm:text-base">{message.text}</div>
         </div>
         
-        <span className={`text-xs text-[hsl(var(--text-dark))] mt-1 block ${
+        <span className={`text-[10px] sm:text-xs text-[hsl(var(--text-dark))] mt-1 block ${
           isBot ? "" : "text-right"
         }`}>
           {message.time}
