@@ -85,8 +85,12 @@ export default function TeamInfo() {
             <div className="grid grid-cols-3 gap-2">
               {players.map((player, index) => (
                 <div key={player.id} className="flex flex-col items-center">
-                  <Avatar className="w-12 h-12 mb-1 bg-[hsl(var(--furia-light))]">
-                    <AvatarFallback>{player.name.charAt(0)}</AvatarFallback>
+                  <Avatar className="w-10 h-10 mb-1 bg-[hsl(var(--furia-light))]">
+                    {player.image ? (
+                      <AvatarImage src={player.image} alt={player.name} />
+                    ) : (
+                      <AvatarFallback>{player.name.charAt(0)}</AvatarFallback>
+                    )}
                   </Avatar>
                   <span className="text-xs font-medium">{player.name}</span>
                 </div>

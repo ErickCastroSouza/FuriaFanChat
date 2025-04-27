@@ -1,4 +1,10 @@
 import { Player, TeamStats, TeamData } from '@/types';
+import FalleN from "../assets/players/FalleN.webp"
+import KSCERATO from "../assets/players/KSCERATO.webp"
+import molodoy from "../assets/players/molodoy.webp"
+import skullz from "../assets/players/skullz.webp"
+import YEKINDAR from "../assets/players/YEKINDAR.webp"
+import yuriih from "../assets/players/yuurih.webp"
 
 // Dados atualizados dos jogadores da FURIA CS2 (abril de 2025)
 export const currentPlayers: Player[] = [
@@ -7,36 +13,42 @@ export const currentPlayers: Player[] = [
     name: "yuurih",
     realName: "Yuri Santos",
     role: "Rifler",
+    image: yuriih,
   },
   {
     id: "2",
     name: "KSCERATO",
     realName: "Kaike Cerato",
     role: "Rifler",
+    image: KSCERATO,
   },
   {
     id: "3",
     name: "molodoy",
     realName: "David Bermudez",
     role: "Rifler",
+    image: molodoy,
   },
   {
     id: "4",
     name: "yekindar",
     realName: "Mareks Gaļinskis",
     role: "Rifler",
+    image: YEKINDAR,
   },
   {
     id: "5",
     name: "FalleN",
     realName: "Gabriel Toledo",
     role: "AWPer/IGL",
+    image: FalleN,
   },
   {
     id: "6",
     name: "skullz",
     realName: "Felipe Medeiros",
     role: "Reserva/AWPer",
+    image: skullz,
   },
   {
     id: "7",

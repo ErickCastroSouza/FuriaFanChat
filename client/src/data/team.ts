@@ -1,53 +1,66 @@
 import { Player, TeamStats, TeamData } from "@/types";
+import FalleN from "../assets/players/FalleN.webp"
+import KSCERATO from "../assets/players/KSCERATO.webp"
+import molodoy from "../assets/players/molodoy.webp"
+import skullz from "../assets/players/skullz.webp"
+import YEKINDAR from "../assets/players/YEKINDAR.webp"
+import yuriih from "../assets/players/yuurih.webp"
+import { Skeleton } from "@/components/ui/skeleton";
 
 export const players: Player[] = [
   {
     id: "1",
     name: "FalleN",
     realName: "Gabriel Toledo",
-    role: "AWPer/IGL",
+    role: "IGL",
+    image: FalleN,
   },
   {
     id: "2",
-    name: "yuurih",
+    name: "Yuurih",
     realName: "Yuri Santos",
     role: "Rifler",
+    image: yuriih,
   },
   {
     id: "3",
     name: "KSCERATO",
     realName: "Kaike Cerato",
     role: "Rifler",
+    image: KSCERATO,
   },
   {
     id: "4",
-    name: "molodoy",
+    name: "Molodoy",
     realName: "David Bermudez",
     role: "Rifler",
+    image: molodoy,
   },
   {
     id: "5",
-    name: "yekindar",
+    name: "Yekindar",
     realName: "Mareks Gaļinskis",
     role: "Rifler",
+    image: YEKINDAR,
   },
   {
     id: "6",
-    name: "skullz",
+    name: "Skullz",
     realName: "Felipe Medeiros",
     role: "Reserva",
+    image: skullz,
   },
 ];
 
 export const teamStats: TeamStats = {
-  worldRanking: 8,
-  recentWins: 6,
-  recentLosses: 4,
-  nextMatch: "BLAST Premier Spring Final",
+  worldRanking: 16,
+  recentWins: 3,
+  recentLosses: 6,
+  nextMatch: "Não há partidas agendadas",
 };
 
 export const teamData: TeamData = {
   name: "FURIA Esports",
   description: "FURIA Esports é uma organização brasileira de esports fundada em 2017, conhecida principalmente por sua equipe de Counter-Strike 2 (CS2), que vem conquistando destaque internacional.",
-  coach: "Nicholas \"guerri\" Nogueira",
+  coach: "Sidnei sidde Macedo",
 };

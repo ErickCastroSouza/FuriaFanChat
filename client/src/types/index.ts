@@ -10,7 +10,7 @@ export interface Player {
   name: string;
   realName: string;
   role: string;
-  image?: string;
+  image?: any;
 }
 
 export interface TeamStats {

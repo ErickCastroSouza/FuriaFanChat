@@ -10,7 +10,7 @@ export function getCurrentTime(): string {
 export function getBotResponse(message: string): string {
   const lowerMessage = message.toLowerCase();
   
-  if (lowerMessage.includes('próximo jogo') || lowerMessage.includes('próxima partida')) {
+  if (lowerMessage.includes('próximo jogo') || lowerMessage.includes('próxima partida') || lowerMessage.includes('proximo jogo') || lowerMessage.includes('proxima partida')) {
     return 'A FURIA vai jogar o BLAST Premier Spring Final em junho! Vai ser um torneio insano com os melhores times do mundo! 🔥';
   } 
   else if (lowerMessage.includes('jogadores') || lowerMessage.includes('linha') || lowerMessage.includes('lineup') || lowerMessage.includes('time')) {
@@ -91,7 +91,7 @@ export function getBotResponse(message: string): string {
   else if (lowerMessage.includes('treinador') || lowerMessage.includes('coach')) {
     return 'guerri é o cérebro por trás do caos! O cara é um gênio tático, sempre bolando as estratégias mais loucas! 🧠';
   }
-  else if (lowerMessage.includes('olá') || lowerMessage.includes('oi') || lowerMessage.includes('e aí')) {
+  else if (lowerMessage.includes('olá') || lowerMessage.includes('oi') || lowerMessage.includes('e aí') || lowerMessage.includes('aoba') || lowerMessage.includes('bão')) {
     return 'E aí, blz? Que massa ter você aqui na comunidade FURIA! O que você quer saber sobre nosso esquadrão? Tô ligado em tudo! 🔥';
   }
   else {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X, Flame } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import FuriaLogo from "../assets/logo/furia-esports-logo-white.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,11 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         {/* FURIA Logo */}
         <div className="flex items-center">
-          <Flame className="h-8 w-8 text-[hsl(var(--furia-blue))]" />
+        <img 
+            src={FuriaLogo} 
+            alt="FURIA Logo" 
+            className="h-8 w-auto"
+          />
           <h1 className="ml-3 text-2xl font-bold tracking-wider">
             <span className="text-[hsl(var(--furia-blue))]">FURIA</span> <span className="font-light">CS</span>
           </h1>
@@ -28,7 +33,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6">
         
           <form action="https://www.furia.gg/">
-            <input type="submit" value="Loja"  className="bg-[hsl(var(--furia-blue))] px-4 py-2 text-white text-sm uppercase font-semibold cursor-pointer tracking-wide hover:bg-opacity-90 transition-colors" />
+            <input type="submit" value="Loja"  className="bg-[hsl(var(--furia-blue))] px-4 py-2 text-black text-sm uppercase font-semibold cursor-pointer tracking-wide hover:bg-opacity-90 transition-colors" />
           </form>
         </nav>
         

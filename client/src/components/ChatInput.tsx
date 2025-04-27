@@ -34,7 +34,7 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
         <Button
           type="submit"
           disabled={!message.trim()}
-          className="bg-[hsl(var(--furia-blue))] px-4 rounded-r-md flex items-center justify-center hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded-l-none"
+          className="bg-[hsl(var(--furia-button))] px-4 rounded-r-md flex items-center justify-center hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded-l-none"
         >
           <Layers className="h-4 w-4" />
         </Button>

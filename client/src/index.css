@@ -27,7 +27,8 @@
   --radius: 0.5rem;
   
   /* FURIA specific colors */
-  --furia-blue: 207 90% 54%;
+  --furia-button: 207 90% 54%;
+  --furia-blue: 0 0% 100%;
   --furia-teal: 180 85% 26%;
   --furia-dark: 240 10% 8%;
   --furia-gray: 228 9% 13%;
@@ -120,7 +121,7 @@
   }
   
   .furia-glow {
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
   }
   
   .scrollbar-hide::-webkit-scrollbar {
