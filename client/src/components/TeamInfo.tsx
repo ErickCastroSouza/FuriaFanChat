@@ -83,7 +83,31 @@ export default function TeamInfo() {
           >
             <h4 className="text-sm font-semibold uppercase text-[hsl(var(--text-dark))] mb-2">Lineup Atual</h4>
             <div className="grid grid-cols-3 gap-2">
-              {players.map((player, index) => (
+              {players.slice(0, 5).map((player, index) => (
+                <div key={player.id} className="flex flex-col items-center">
+                  <Avatar className="w-10 h-10 mb-1 bg-[hsl(var(--furia-light))]">
+                    {player.image ? (
+                      <AvatarImage src={player.image} alt={player.name} />
+                    ) : (
+                      <AvatarFallback>{player.name.charAt(0)}</AvatarFallback>
+                    )}
+                  </Avatar>
+                  <span className="text-xs font-medium">{player.name}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+           {/* Reservas */}
+           <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="bg-[hsla(var(--furia-gray),0.8)] backdrop-blur-sm rounded p-3 furia-glow mt-3"
+          >
+            <h4 className="text-sm font-semibold uppercase text-[hsl(var(--text-dark))] mb-2">Reservas</h4>
+            <div className="flex justify-center gap-4">
+              {players.slice(5).map((player, index) => (
                 <div key={player.id} className="flex flex-col items-center">
                   <Avatar className="w-10 h-10 mb-1 bg-[hsl(var(--furia-light))]">
                     {player.image ? (

@@ -1,10 +1,11 @@
 import { Player, TeamStats, TeamData } from '@/types';
-import FalleN from "../assets/players/FalleN.webp"
-import KSCERATO from "../assets/players/KSCERATO.webp"
-import molodoy from "../assets/players/molodoy.webp"
-import skullz from "../assets/players/skullz.webp"
-import YEKINDAR from "../assets/players/YEKINDAR.webp"
-import yuriih from "../assets/players/yuurih.webp"
+import FalleN from "../assets/players/FalleN.webp";
+import KSCERATO from "../assets/players/KSCERATO.webp";
+import molodoy from "../assets/players/molodoy.webp";
+import skullz from "../assets/players/skullz.webp";
+import YEKINDAR from "../assets/players/YEKINDAR.webp";
+import yuriih from "../assets/players/yuurih.webp";
+import chelo from "../assets/players/chelo.webp";
 
 // Dados atualizados dos jogadores da FURIA CS2 (abril de 2025)
 export const currentPlayers: Player[] = [
@@ -55,6 +56,7 @@ export const currentPlayers: Player[] = [
     name: "chelo",
     realName: "Marcelo Cespedes",
     role: "Reserva/Rifler",
+    image: chelo,
   },
 ];
 
