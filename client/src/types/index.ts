@@ -18,6 +18,7 @@ export interface TeamStats {
   recentWins: number;
   recentLosses: number;
   nextMatch: string;
+  nextTournament: string;
 }
 
 export interface TeamData {

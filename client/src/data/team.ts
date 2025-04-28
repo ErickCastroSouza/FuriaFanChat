@@ -66,6 +66,7 @@ export const teamStats: TeamStats = {
   recentWins: 3,
   recentLosses: 6,
   nextMatch: "Não há partidas agendadas",
+  nextTournament: "PGL Astana 2025"
 };
 
 export const teamData: TeamData = {

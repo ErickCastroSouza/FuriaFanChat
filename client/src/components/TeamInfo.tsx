@@ -113,9 +113,13 @@ export default function TeamInfo() {
               <span className="text-sm font-semibold uppercase text-[hsl(var(--text-dark))]">Vitórias Recentes</span>
               <span className="text-lg font-bold">{teamStats.recentWins}-{teamStats.recentLosses}</span>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-2">
               <span className="text-sm font-semibold uppercase text-[hsl(var(--text-dark))]">Próximo Jogo</span>
               <span className="text-md font-semibold">{teamStats.nextMatch}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-sm font-semibold uppercase text-[hsl(var(--text-dark))]">Próximo Torneio</span>
+              <span className="text-md font-semibold">{teamStats.nextTournament}</span>
             </div>
           </motion.div>
           

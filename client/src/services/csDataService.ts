@@ -62,10 +62,11 @@ export const currentPlayers: Player[] = [
 
 // Estatísticas atualizadas do time
 export const currentTeamStats: TeamStats = {
-  worldRanking: 8,
+  worldRanking: 16,
   recentWins: 6,
   recentLosses: 4,
   nextMatch: "Não há partidas agendadas",
+  nextTournament: "PGL Astana 2025",
 };
 
 // Informações do time
@@ -83,8 +84,8 @@ type FuriaResponse = {
 
 const responses: FuriaResponse[] = [
   {
-    keyword: "Quem são os jogadores?",
-    response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O AWper do nosso time! O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
+    keyword: ["Onde assistir os Jogos da FURIA?", 'onde assistir', 'onde ver', 'twitch' ],
+    response: `E aí, minha fera! As partidas da FURIA são transmitidas em várias plataformas, como Twitch, YouTube e até mesmo na TV, dependendo do evento. Para não perder nenhum lance, fique de olho nas redes sociais da FURIA, onde sempre divulgamos onde e quando as partidas serão transmitidas. Aqui estão os links:\n\n• Twitch: https://www.twitch.tv/furiagg \n\n• YouTube: https://www.youtube.com/furiagg \n\n• Twitter: https://twitter.com/furiagg Vamos juntos torcer pela FURIA!`
   },
   {
     keyword: "Quando é o próximo jogo?",
@@ -93,10 +94,6 @@ const responses: FuriaResponse[] = [
   {
     keyword: "Qual o ranking da FURIA?",
     response:`FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
-  },
-  {
-    keyword: "Quem é o melhor jogador?",
-    response: 'KSCERATO continua sendo o MONSTRO do time! O cara tá jogando muito! A precisão dele é absurda, não perde duel, não erra spray, é um alien! 👽 Mas o yuurih também tá destruindo demais nos últimos jogos!'
   },
   {
     keyword: "Qual a função do FalleN no time?",
@@ -131,16 +128,8 @@ const responses: FuriaResponse[] = [
     response: 'KSCERATO tá com média de rating alta, muitos headshots e é um dos melhores riflers do Brasil! 📊 É MUITA PRECISÃO! O maluco é uma MÁQUINA! Estatisticamente, ele é um dos jogadores mais consistentes da América Latina! 🌟'
   },
   {
-    keyword: "Ele já ganhou algum MVP?",
-    response: 'KSCERATO já ganhou MVP em vários torneios! O cara sempre está entre os melhores jogadores dos campeonatos! 🏆 É um dos grandes talentos do CS brasileiro, sem dúvida! 🔥'
-  },
-  {
-    keyword: "Qual a função dele no time?",
-    response: 'KSCERATO é o rifler estrela do time, o cara que segura o bomb site sozinho! 💣 Ele também é o clutcher, que sempre resolve quando tá todo mundo morto. A calma e precisão dele em 1v3 é algo de outro mundo! 🧠'
-  },
-  {
     keyword: "Como o FalleN chegou na FURIA?",
-    response: 'O FalleN chegou na FURIA em janeiro de 2024! Foi um projeto ambicioso depois de anos jogando na América do Norte. Ele decidiu voltar pro cenário brasileiro e trazer toda a experiência para essa nova fase da equipe. A chegada dele foi um game changer! 🚀'
+    response: 'O FalleN chegou na FURIA em julho de 2023! Foi um projeto ambicioso depois de anos jogando na América do Norte. Ele decidiu voltar pro cenário brasileiro e trazer toda a experiência para essa nova fase da equipe. A chegada dele foi um game changer! 🚀'
   },
   {
     keyword: "Qual a influência do FalleN?",
@@ -149,10 +138,6 @@ const responses: FuriaResponse[] = [
   {
     keyword: "Me fale sobre o molodoy",
     response: 'O molodoy é PURO TALENTO! O garoto veio da Europa e já mostrou que não é brincadeira! 💪 Tem uma mira mecânica perfeita e reflexos absurdos! Com o FalleN dando call, ele só vai melhorar cada vez mais! 🚀'
-  },
-  {
-    keyword: "Qual o pior mapa da FURIA?",
-    response: 'Ancient é um dos mapas mais desafiadores para a FURIA. Mas eles já estão treinando pra melhorar! A dedicação do time é incrível, estão sempre buscando evoluir em todos os mapas! 💯'
   },
   {
     keyword: "Quantos mapas tem no pool?",
@@ -176,23 +161,19 @@ const responses: FuriaResponse[] = [
   },
   {
     keyword: "Qual o próximo torneio?",
-    response: 'O próximo grande evento da FURIA é o ${currentTeamStats.nextMatch}! 🔥 Depois vêm vários outros torneios importantes! A agenda tá LOTADA de competições Tier 1! É FURIA jogando contra os melhores do mundo direto! 🌎'
+    response: `O próximo grande evento da FURIA é o ${currentTeamStats.nextTournament}! 🔥 Depois vêm vários outros torneios importantes! A agenda tá LOTADA de competições Tier 1! É FURIA jogando contra os melhores do mundo direto! 🌎`
   },
   {
-    keyword: "Quem é a maior rival da FURIA?",
-    response: 'No cenário nacional, a Imperial e a MIBR são rivais tradicionais da FURIA! 🇧🇷 Já internacionalmente, sempre temos jogos disputados contra NAVI, Liquid e times'
+    keyword: ['próximo torneio', 'proxima torneio', 'torneio','próxima competição', 'proxima competição', 'competição', 'competição', 'proxima competiçao', 'campeonato', 'próximo campeonato', 'proximo campeonato'],
+    response: `A FURIA vai jogar o ${currentTeamStats.nextTournament}! Vai ser um torneio insano com os melhores times do mundo! 🔥`
   },
   {
-    keyword: ['próximo jogo', 'próxima partida', 'proxima partida', 'proximo jogo'],
-    response: `A FURIA vai jogar o ${currentTeamStats.nextMatch}! Vai ser um torneio insano com os melhores times do mundo! 🔥`
+    keyword: ['jogadores', 'linha', 'lineup', 'time', "Quem são os jogadores?"],
+    response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
   },
   {
-    keyword: ['jogadores', 'linha', 'lineup', 'time'],
-    response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL e AWPer! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
-  },
-  {
-    keyword: ['função do fallen', 'papel do fallen', 'função do FalleN'],
-    response: 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈'
+    keyword: ['função do fallen', 'papel do fallen', 'função do FalleN', 'Qual a função do FalleN no time?'],
+    response: 'O FalleN chegou na FURIA em julho de 2023! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo IGL! É O VERDADEIRO MONSTRO! 📈'
   },
   {
     keyword: ['yekindar se adaptou', 'adaptação do yekindar', 'como o yekindar', 'yekindar'],
@@ -203,32 +184,20 @@ const responses: FuriaResponse[] = [
     response: 'O molodoy é PURO TALENTO! O garoto veio da Europa e já mostrou que não é brincadeira! 💪 Tem uma mira mecânica perfeita e reflexos absurdos! Com o FalleN dando call, ele só vai melhorar cada vez mais! 🚀'
   },
   {
-    keyword: ['influência do fallen', 'qual a influência'],
+    keyword: ['influência do fallen', 'influencia do fallen'],
     response: 'A influência do FalleN é GIGANTE! O cara trouxe toda a experiência de bicampeão mundial e tá passando conhecimento pros jovens. A liderança dele muda completamente o jogo da FURIA! 📈 Desde as táticas até a confiança do time, tudo melhorou com a chegada dele! 🧠'
   },
   {
-    keyword: ['como o fallen chegou', 'chegou na furia'],
-    response: 'O FalleN chegou na FURIA em janeiro de 2024! Foi um projeto ambicioso depois de anos jogando na América do Norte. Ele decidiu voltar pro cenário brasileiro e trazer toda a experiência para essa nova fase da equipe. A chegada dele foi um game changer! 🚀'
-  },
-  {
     keyword: ['quais são as chances de vitória', 'chance de ganhar'],
-    response: 'Nossa equipe tá forte, mas o BLAST Premier Spring Final vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪'
+    response: `Nossa equipe tá forte, mas o ${currentTeamStats.nextTournament}! vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪`
   },
   {
     keyword: ['último confronto', 'enfrentaram'],
     response: 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o FalleN tá liderando muito bem com suas estratégias e experiência! 🔥'
   },
   {
-    keyword: ['quais torneios', 'torneios depois'],
-    response: 'Depois do BLAST Premier Spring Final, a FURIA vai se preparar pro ESL Challenger em Melbourne e depois pro Major RMR! 🌎 Calendário lotado de torneios importantes! Muito CS de alto nível vindo aí!'
-  },
-  {
     keyword: ['como chegar ao top 1', 'chegar ao primeiro lugar'],
     response: 'Pra chegar ao Top 1, a FURIA precisa manter a consistência e seguir evoluindo como time! 🔝 Com o lineup atual cada vez mais entrosado e o guerri trabalhando forte, logo podemos chegar lá! A mentalidade é de campeão! 👑'
-  },
-  {
-    keyword: ['quem está acima', 'times acima'],
-    response: 'Atualmente, times como Vitality, FaZe, NAVI, G2, Team Spirit, Complexity e Monte estão na frente no ranking, mas isso tá sempre mudando! 🔄 A FURIA tem tudo pra subir nas próximas semanas com bons resultados! 📈'
   },
   {
     keyword: ['times são rivais', 'maior rival'],
@@ -239,24 +208,12 @@ const responses: FuriaResponse[] = [
     response: 'KSCERATO tá com média de rating alta, muitos headshots e é um dos melhores riflers do Brasil! 📊 É MUITA PRECISÃO! O maluco é uma MÁQUINA! Estatisticamente, ele é um dos jogadores mais consistentes da América Latina! 🌟'
   },
   {
-    keyword: ['ganhou algum mvp', 'mvp do kscerato'],
-    response: 'KSCERATO já ganhou MVP em vários torneios! O cara sempre está entre os melhores jogadores dos campeonatos! 🏆 É um dos grandes talentos do CS brasileiro, sem dúvida! 🔥'
-  },
-  {
-    keyword: ['função dele no time', 'papel do kscerato'],
+    keyword: ['papel do kscerato', 'kscerato'],
     response: 'KSCERATO é o rifler estrela do time, o cara que segura o bomb site sozinho! 💣 Ele também é o clutcher, que sempre resolve quando tá todo mundo morto. A calma e precisão dele em 1v3 é algo de outro mundo! 🧠'
-  },
-  {
-    keyword: ['pior mapa', 'mapa fraco'],
-    response: 'Ancient é um dos mapas mais desafiadores para a FURIA. Mas eles já estão treinando pra melhorar! A dedicação do time é incrível, estão sempre buscando evoluir em todos os mapas! 💯'
   },
   {
     keyword: ['quantos mapas', 'pool de mapas'],
     response: 'O pool atual do CS2 tem 7 mapas: Mirage, Inferno, Nuke, Overpass, Ancient, Anubis e Vertigo. A FURIA pratica todos, mas tem preferência por Mirage, Nuke e Inferno! 🗺️'
-  },
-  {
-    keyword: ['treinam todos', 'treino de mapas'],
-    response: 'SIM! A FURIA tem bootcamp todos os dias, muitas horas de treino PESADO! 💪 O guerri faz questão que o time esteja preparado pra qualquer mapa. É profissionalismo total! Eles analisam cada detalhe dos demos! 🎮'
   },
   {
     keyword: ['quanto tempo ele treina', 'guerri treina'],
@@ -271,20 +228,12 @@ const responses: FuriaResponse[] = [
     response: 'SIM! guerri jogou CS 1.6 profissionalmente! 👴 Ele competiu em vários times brasileiros antes de virar coach. Essa experiência como jogador ajudou ele a entender melhor como desenvolver talentos! Mestre demais! 🧙‍♂️'
   },
   {
-    keyword: ['próximo torneio', 'próxima competição'],
-    response: `O próximo grande evento da FURIA é o ${currentTeamStats.nextMatch}! 🔥 Depois vêm vários outros torneios importantes! A agenda tá LOTADA de competições Tier 1! É FURIA jogando contra os melhores do mundo direto! 🌎`
-  },
-  {
-    keyword: ['como começou', 'início da furia'],
+    keyword: ['como começou', 'início da furia', 'historia', 'história', 'Qual é a história da FURIA?'],
     response: 'A FURIA surgiu em 2017, fundada pelo Jaime "raizen" Pádua e cresceu rapidamente! No começo era um projeto pequeno, mas logo se tornou potência! 🚀 Hoje é uma das maiores orgs de esports do Brasil e representa muito bem o país no cenário internacional! 💙'
   },
   {
     keyword: ['rank', 'posição', 'mundial'],
     response: `FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
-  },
-  {
-    keyword: ['torneio', 'campeonato', 'competição'],
-    response: 'Nossa agenda tá cheia de campeonatos Tier 1! O time tá se preparando pro BLAST Premier Spring Final! 📅 Depois vem mais torneios importantes, tamo com a agenda lotada!'
   },
   {
     keyword: ['histórico', 'últimos jogos', 'resultado'],

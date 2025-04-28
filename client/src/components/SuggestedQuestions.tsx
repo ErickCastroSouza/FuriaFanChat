@@ -21,9 +21,9 @@ export default function SuggestedQuestions({
     if (!lastMessageContent) {
       // Perguntas iniciais
       return [
-        "Quem são os jogadores?",
+        "Qual é a história da FURIA?",
         "Quando é o próximo jogo?",
-        "Qual o ranking da FURIA?"
+        "Onde assistir os jogos da Fúria?"
       ];
     }
 
@@ -31,12 +31,12 @@ export default function SuggestedQuestions({
     
     if (content.includes("line-up") || content.includes("lineup") || content.includes("jogadores") || content.includes("esquadrão")) {
       return [
-        "Quem é o melhor jogador?",
-        "Qual a função do FalleN no time?",
-        "Como o yekindar se adaptou ao time?"
+        "Qual é a história da FURIA?",
+        "Quando é o próximo jogo?",
+        "Onde assistir os jogos da FURIA?"
       ];
     } 
-    else if (content.includes("próximo jogo") || content.includes("navi") || content.includes("partida")) {
+    else if (content.includes("próximo jogo") || content.includes("navi") || content.includes("partida") || (content.includes("proximo jogo") || content.includes("torneio"))) {
       return [
         "Quais são as chances de vitória?",
         "Qual foi o último confronto?",
@@ -50,18 +50,11 @@ export default function SuggestedQuestions({
         "Quais times são rivais?"
       ];
     }
-    else if (content.includes("kscerato") || content.includes("jogador") || content.includes("melhor")) {
-      return [
-        "Quais são as estatísticas dele?",
-        "Ele já ganhou algum MVP?",
-        "Qual a função dele no time?"
-      ];
-    }
-    else if (content.includes("fallen") || content.includes("awper") || content.includes("liderança")) {
+    else if (content.includes("fallen") || content.includes("igl") || content.includes("liderança")) {
       return [
         "Como o FalleN chegou na FURIA?",
         "Qual a influência do FalleN?",
-        "Me fale sobre o molodoy"
+        "Qual a função do FalleN no time?"
       ];
     }
     else if (content.includes("mapa") || content.includes("nuke") || content.includes("mirage")) {
@@ -82,7 +75,7 @@ export default function SuggestedQuestions({
       // Perguntas genéricas para qualquer outro contexto
       return [
         "Qual o próximo torneio?",
-        "Quem é a maior rival da FURIA?",
+        "Onde assistir os Jogos da Fúria?",
         "Como começou a FURIA CS?"
       ];
     }
