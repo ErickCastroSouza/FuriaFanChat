@@ -4,8 +4,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Target } from "lucide-react";
 import { FaChartLine } from "react-icons/fa";
 import { teamData, teamStats, players } from "@/data/team";
+import homemDeBlusa from "../assets/images/homem-de-blusa.webp";
+import homemDeJaqueta from "../assets/images/homem-de-jaqueta.webp";
+import mulherDeBlusa from "../assets/images/mulher-de-blusa.webp";
+import mulherDeMoletom from "../assets/images/mulher-de-moletom.webp";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 
 export default function TeamInfo() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,39 +30,67 @@ export default function TeamInfo() {
       transition={{ duration: 0.5 }}
       className="character-container w-full h-full bg-gradient-to-b from-[hsl(var(--furia-gray))] to-[hsl(var(--furia-dark))] relative overflow-hidden flex flex-col"
     >
-      {/* CS Character */}
-      <div className="absolute left-0 bottom-0 h-[90%] z-0">
-        <svg 
-          width="400" 
-          height="600" 
-          viewBox="0 0 400 600" 
-          fill="none" 
-          xmlns="http://www.w3.org/2000/svg" 
-          className="h-full w-auto"
-        >
-          <path 
-            d="M200 580C310.457 580 400 490.457 400 380C400 269.543 310.457 180 200 180C89.5431 180 0 269.543 0 380C0 490.457 89.5431 580 200 580Z" 
-            fill="url(#paint0_radial)" 
-          />
-          <defs>
-            <radialGradient 
-              id="paint0_radial" 
-              cx="0" 
-              cy="0" 
-              r="1" 
-              gradientUnits="userSpaceOnUse" 
-              gradientTransform="translate(200 380) rotate(90) scale(200)"
+      {/* CS Character Carousel */}
+      <div className="relative ">
+          <svg
+            width="400" 
+            height="600" 
+            viewBox="0 0 400 600" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-full w-auto "
+          >
+            <path 
+              d="M200 580C310.457 580 400 490.457 400 380C400 269.543 310.457 180 200 180C89.5431 180 0 269.543 0 380C0 490.457 89.5431 580 200 580Z" 
+              fill="url(#paint0_radial)" 
+            />
+            <defs>
+              <radialGradient 
+                id="paint0_radial" 
+                cx="0" 
+                cy="0" 
+                r="1" 
+                gradientUnits="userSpaceOnUse" 
+                gradientTransform="translate(200 380) rotate(90) scale(200)"
+              >
+                <stop stopColor="#121318" stopOpacity="0" />
+                <stop offset="1" stopColor="#121318" />
+              </radialGradient>
+            </defs>
+          </svg>
+
+          {/* Image Carousel */}
+          <div className="absolute inset-0 flex items-center justify-center z-0" style={{ top: "10%", height: "60%" }}>
+            {/* <Carousel 
+              opts={{
+                align: "center",
+                loop: true,
+                duration: 2000, // Changed duration to milliseconds
+              }}
+              className="w-full max-w-[80%]"
             >
-              <stop stopColor="#121318" stopOpacity="0" />
-              <stop offset="1" stopColor="#121318" />
-            </radialGradient>
-          </defs>
-        </svg>
-        
-        {/* Silhouette of CS character */}
-        <Target className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[hsl(var(--furia-silver))] opacity-10 text-[300px]" />
-      </div>
-      
+              <CarouselContent>
+                {[homemDeBlusa, homemDeJaqueta, mulherDeBlusa, mulherDeMoletom, ...players.map(player => player.image)].map((image, index) => (
+                  <CarouselItem key={index}>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 0.9, y: 0 }}
+                      transition={{ delay: 0.3, duration: 0.8 }}
+                      className="h-full flex items-center justify-center"
+                    >
+                      <img 
+                        src={image || '/placeholder.jpg'} // Handle missing images
+                        alt={`CS2 Image ${index + 1}`}
+                        className="h-full max-h-[400px] w-auto object-contain"
+                        style={{ filter: "drop-shadow(0 0 15px rgba(0, 0, 0, 0.8))" }}
+                      />
+                    </motion.div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel> */}
+          </div>
+        </div>
       {/* Team stats overlay */}
       <div className="absolute bottom-0 left-0 w-full p-4 pb-8 z-10 bg-gradient-to-t from-[hsl(var(--furia-dark))] via-[rgba(18,19,24,0.9)] to-transparent">
         <h3 className="text-xl font-bold text-[hsl(var(--furia-blue))] mb-2 flex items-center">

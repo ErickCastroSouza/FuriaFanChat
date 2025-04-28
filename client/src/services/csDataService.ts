@@ -65,7 +65,7 @@ export const currentTeamStats: TeamStats = {
   worldRanking: 8,
   recentWins: 6,
   recentLosses: 4,
-  nextMatch: "BLAST Premier Spring Final",
+  nextMatch: "Não há partidas agendadas",
 };
 
 // Informações do time
@@ -84,7 +84,7 @@ type FuriaResponse = {
 const responses: FuriaResponse[] = [
   {
     keyword: "Quem são os jogadores?",
-    response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL e AWPer! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
+    response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O AWper do nosso time! O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
   },
   {
     keyword: "Quando é o próximo jogo?",
@@ -92,7 +92,7 @@ const responses: FuriaResponse[] = [
   },
   {
     keyword: "Qual o ranking da FURIA?",
-    response: `FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
+    response:`FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
   },
   {
     keyword: "Quem é o melhor jogador?",
@@ -100,7 +100,7 @@ const responses: FuriaResponse[] = [
   },
   {
     keyword: "Qual a função do FalleN no time?",
-    response: 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈'
+    response: 'O FalleN chegou na FURIA em julho de 2023! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈'
   },
   {
     keyword: "Como o yekindar se adaptou ao time?",
@@ -108,7 +108,7 @@ const responses: FuriaResponse[] = [
   },
   {
     keyword: "Quais são as chances de vitória?",
-    response: 'Nossa equipe tá forte, mas o BLAST Premier Spring Final vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪'
+    response: 'A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪'
   },
   {
     keyword: "Qual foi o último confronto?",
@@ -116,15 +116,11 @@ const responses: FuriaResponse[] = [
   },
   {
     keyword: "Quais torneios vêm depois?",
-    response: 'Depois do BLAST Premier Spring Final, a FURIA vai se preparar pro ESL Challenger em Melbourne e depois pro Major RMR! 🌎 Calendário lotado de torneios importantes! Muito CS de alto nível vindo aí!'
+    response: 'Ainda não temos informações dos próximos torneios que iremos participar, mas fique de olho nas nossas redes sociais :D'
   },
   {
     keyword: "Como chegar ao Top 1?",
     response: 'Pra chegar ao Top 1, a FURIA precisa manter a consistência e seguir evoluindo como time! 🔝 Com o lineup atual cada vez mais entrosado e o guerri trabalhando forte, logo podemos chegar lá! A mentalidade é de campeão! 👑'
-  },
-  {
-    keyword: "Quem está acima da FURIA?",
-    response: 'Atualmente, times como Vitality, FaZe, NAVI, G2, Team Spirit, Complexity e Monte estão na frente no ranking, mas isso tá sempre mudando! 🔄 A FURIA tem tudo pra subir nas próximas semanas com bons resultados! 📈'
   },
   {
     keyword: "Quais times são rivais?",
@@ -195,11 +191,11 @@ const responses: FuriaResponse[] = [
     response: 'Nosso esquadrão tá MONSTRO:\n\n• FalleN: O Godfather do CS brasileiro, nosso IGL e AWPer! 👑\n• yuurih: Monstro do rifle, o cara não erra! 💯\n• KSCERATO: A máquina de headshots! 🤯\n• molodoy: O jovem prodígio com reflexos insanos! ⚡\n• yekindar: A estrela internacional que chegou destruindo! 💣\n\nTemos ainda o skullz e o chelo como reservas! Time STACKED! 🔥'
   },
   {
-    keyword: ['função do fallen', 'papel do fallen'],
+    keyword: ['função do fallen', 'papel do fallen', 'função do FalleN'],
     response: 'O FalleN chegou na FURIA em janeiro de 2024! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈'
   },
   {
-    keyword: ['yekindar se adaptou', 'adaptação do yekindar', 'como o yekindar'],
+    keyword: ['yekindar se adaptou', 'adaptação do yekindar', 'como o yekindar', 'yekindar'],
     response: 'O yekindar se adaptou MUITO BEM! Os caras já estão se comunicando melhor que nunca, e ele já pegou o jeito brasileiro de jogar! 🇱🇻🤝🇧🇷 Aliás, ele já tá até tomando açaí e aprendendo a dançar pagode! 😂'
   },
   {
@@ -313,22 +309,35 @@ const responses: FuriaResponse[] = [
   {
     keyword: '*', // padrão de fallback para qualquer outra pergunta
     response: 'Tô aqui pra trocar ideia sobre a FURIA! Me pergunta sobre jogos, lineup, ranking, torneios... Qualquer parada do time que eu tô sabendo! 👊'
-  }
+  },
 ];
+
+var nextGame = false
 
 // Função para pegar a resposta correspondente
 export function getFuriaResponse(query: string): string {
+
+  const nextGameList = ["quando é o próximo jogo?", 'próximo jogo', 'próxima partida', 'proxima partida', 'proximo jogo'];
   const lowerQuery = query.toLowerCase();
+  
+  const containsNextGameQuery = nextGameList.some(term => lowerQuery.includes(term));
+  
+  if (containsNextGameQuery && nextGame == false) {
+    return "No momento estamos em período de treinos e preparação! ⚔️ O time está aproveitando esse tempo para aprimorar as táticas e fortalecer ainda mais o entrosamento! Em breve teremos novidades sobre os próximos campeonatos! 💪";
+  }
 
   for (const { keyword, response } of responses) {
     if (Array.isArray(keyword)) {
-      if (keyword.some(k => lowerQuery.includes(k))) {
+     if (keyword.some(k => lowerQuery.includes(k))) {
         return response;
       }
+      
     } else if (lowerQuery.includes(keyword)) {
       return response;
     }
   };
+
+
 
   return 'Desculpe, não entendi a pergunta. 😅';
 }
