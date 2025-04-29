@@ -7,7 +7,7 @@
 
 <h1>🐺 FuriaFanChat</h1>
 
-<p>Landing page de chatbot dedicada aos fãs do time FURIA de CS:GO, oferecendo uma experiência imersiva e interativa para quem quer ficar ainda mais próximo do time.</p>
+<p>Landing page de chatbot dedicada aos fãs do time FURIA de CS, oferecendo uma experiência imersiva e interativa para quem quer ficar ainda mais próximo do time.</p>
 
 <br>
 
