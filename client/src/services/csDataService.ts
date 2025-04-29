@@ -85,7 +85,7 @@ type FuriaResponse = {
 const responses: FuriaResponse[] = [
   {
     keyword: ["Onde assistir os Jogos da FURIA?", 'onde assistir', 'onde ver', 'twitch' ],
-    response: `E aí, minha fera! As partidas da FURIA são transmitidas em várias plataformas, como Twitch, YouTube e até mesmo na TV, dependendo do evento. Para não perder nenhum lance, fique de olho nas redes sociais da FURIA, onde sempre divulgamos onde e quando as partidas serão transmitidas. Aqui estão os links:\n\n• Twitch: https://www.twitch.tv/furiagg \n\n• YouTube: https://www.youtube.com/furiagg \n\n• Twitter: https://twitter.com/furiagg Vamos juntos torcer pela FURIA!`
+    response: `E aí, minha fera! As partidas da FURIA são transmitidas em várias plataformas, como Twitch, YouTube e até mesmo na TV, dependendo do evento. Para não perder nenhum lance, fique de olho nas redes sociais da FURIA, onde sempre divulgamos onde e quando as partidas serão transmitidas. Aqui estão os links:\n\n• Twitch: https://www.twitch.tv/furiatv \n\n• YouTube: https://www.youtube.com/furiagg \n\n• X: https://x.com/FURIA Vamos juntos torcer pela FURIA!`
   },
   {
     keyword: "Quando é o próximo jogo?",
