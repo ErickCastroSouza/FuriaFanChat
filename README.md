@@ -46,7 +46,7 @@
 
   <pre><code>
 # Clone o repositório
-git clone https://github.com/seu-usuario/furiafanchat.git
+git clone https://github.com/ErickCastroSouza/furiafanchat.git
 
 # Acesse a pasta do projeto
 cd furiafanchat
@@ -66,6 +66,6 @@ http://localhost:5173
   <h2>📄 Considerações</h2>
   <ul>
     <li>As respostas do chatbot são baseadas em dados pré-definidos, sem integração com APIs externas.</li>
-    <li>O projeto foi desenvolvido para fins de demonstração e entretenimento dos fãs da FURIA.</li>
+    <li>O projeto foi desenvolvido para o 💬 Challenge #1 - Experiência Conversacional FURIA.</li>
   </ul>
 
