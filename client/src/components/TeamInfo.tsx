@@ -58,7 +58,7 @@ export function MyCarousel() {
                 <img
                   src={image || "/placeholder.jpg"}
                   alt={`Imagem ${index + 1}`}
-                  className="h-auto max-h-[400px] md:max-h-[500px] w-auto object-contain"
+                  className="h-auto max-h-[350px] md:max-h-[350px] w-auto object-contain"
                 />
               </div>
             </div>

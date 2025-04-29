@@ -18,11 +18,6 @@ export default function Home() {
     sendMessage(question);
   };
 
-  // Scroll to bottom when messages change
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isTyping]);
-
   return (
     <div className="flex flex-col h-screen">
       <Header />
