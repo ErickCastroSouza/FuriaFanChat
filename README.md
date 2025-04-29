@@ -50,7 +50,7 @@
 
   <pre><code>
 # Clone o repositório
-git clone https://github.com/ErickCastroSouza/furiafanchat.git
+git clone https://github.com/ErickCastroSouza/FuriaFanChat.git
 
 # Acesse a pasta do projeto
 cd furiafanchat
