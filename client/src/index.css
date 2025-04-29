@@ -28,14 +28,19 @@
   
   /* FURIA specific colors */
   --furia-button: 207 90% 54%;
-  --furia-blue: 0 0% 100%;
-  --furia-teal: 180 85% 26%;
+  --furia-blue: 45 100% 50%;
+  --furia-teal: 0 0% 85%;
   --furia-dark: 240 10% 8%;
   --furia-gray: 228 9% 13%;
+  --furia-light-gray: 0 0% 85%;
   --furia-light: 225 9% 20%;
   --furia-silver: 0 0% 75%;
+  --furia-yellow: 45 100% 50%;
+  --furia-black: 0 0% 0%;
   --text-light: 0 0% 95%;
   --text-dark: 220 4% 56%;
+  --text-chat: 0 50% 10%;
+  --furia-yellow: 45 100% 10%;
 }
 
 @layer base {
@@ -70,7 +75,7 @@
     top: 8px;
     right: 100%;
     border: 8px solid transparent;
-    border-right-color: hsl(var(--furia-teal));
+    border-right-color: hsl(var(--furia-light-gray));
   }
   
   .chat-bubble-user {
@@ -83,7 +88,7 @@
     top: 8px;
     left: 100%;
     border: 8px solid transparent;
-    border-left-color: hsl(var(--furia-button));
+    border-left-color: hsl(var(--furia-blue));
   }
   
   @keyframes typing {
@@ -95,6 +100,7 @@
   .typing-dot {
     animation: typing 1.4s infinite;
     display: inline-block;
+    color: black;
   }
   
   .typing-dot:nth-child(2) {
@@ -171,7 +177,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, hsl(var(--furia-teal)) 0%, transparent 100%);
+    background: radial-gradient(circle, hsl(var(--furia-light-gray)) 0%, transparent 100%);
     opacity: 0;
     transform: scale(0);
     transition: transform 0.3s, opacity 0.3s;

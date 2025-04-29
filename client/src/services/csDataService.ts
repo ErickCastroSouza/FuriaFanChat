@@ -96,7 +96,7 @@ const responses: FuriaResponse[] = [
     response:`FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
   },
   {
-    keyword: "Qual a função do FalleN no time?",
+    keyword: "Como o FalleN chegou na FURIA?",
     response: 'O FalleN chegou na FURIA em julho de 2023! Ele voltou pro Brasil depois de anos jogando na América do Norte e trouxe toda a experiência de bicampeão mundial! 🏆🏆 O homem veio pra levar a FURIA ao topo, sendo AWPer e IGL ao mesmo tempo! É O VERDADEIRO MONSTRO! 📈'
   },
   {
@@ -108,8 +108,8 @@ const responses: FuriaResponse[] = [
     response: 'A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪'
   },
   {
-    keyword: "Qual foi o último confronto?",
-    response: 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o FalleN tá liderando muito bem com suas estratégias e experiência! 🔥'
+    keyword: ["Qual foi o último confronto?", 'ultimo jogo', 'ultimo', 'último', 'último confronto', 'ultimo confronto'],
+    response: 'O último confronto da nossa equipe ocorreu em 3 de fevereiro de 2025, durante a IEM Katowice 2025, contra a Astralis. A partida foi uma melhor de três mapas (MD3), e infelizmente fomos derrotados por 2 a 1, resultando na eliminação da equipe brasileira do torneio. 😔 Mas já estamos nos recuperando e treinando muito para a próxima batalha!!'
   },
   {
     keyword: "Quais torneios vêm depois?",
@@ -126,10 +126,6 @@ const responses: FuriaResponse[] = [
   {
     keyword: "Quais são as estatísticas dele?",
     response: 'KSCERATO tá com média de rating alta, muitos headshots e é um dos melhores riflers do Brasil! 📊 É MUITA PRECISÃO! O maluco é uma MÁQUINA! Estatisticamente, ele é um dos jogadores mais consistentes da América Latina! 🌟'
-  },
-  {
-    keyword: "Como o FalleN chegou na FURIA?",
-    response: 'O FalleN chegou na FURIA em julho de 2023! Foi um projeto ambicioso depois de anos jogando na América do Norte. Ele decidiu voltar pro cenário brasileiro e trazer toda a experiência para essa nova fase da equipe. A chegada dele foi um game changer! 🚀'
   },
   {
     keyword: "Qual a influência do FalleN?",
@@ -192,10 +188,6 @@ const responses: FuriaResponse[] = [
     response: `Nossa equipe tá forte, mas o ${currentTeamStats.nextTournament}! vai ser MUITO disputado! 😎 A FURIA precisa de foco total, mas com o esquadrão encaixando cada vez mais, as chances são boas! #VamosFURIA 💪`
   },
   {
-    keyword: ['último confronto', 'enfrentaram'],
-    response: 'Nos últimos jogos, a FURIA mostrou um CS de alto nível! O KSCERATO e o yuurih têm sido fundamentais, e o FalleN tá liderando muito bem com suas estratégias e experiência! 🔥'
-  },
-  {
     keyword: ['como chegar ao top 1', 'chegar ao primeiro lugar'],
     response: 'Pra chegar ao Top 1, a FURIA precisa manter a consistência e seguir evoluindo como time! 🔝 Com o lineup atual cada vez mais entrosado e o guerri trabalhando forte, logo podemos chegar lá! A mentalidade é de campeão! 👑'
   },
@@ -236,12 +228,8 @@ const responses: FuriaResponse[] = [
     response: `FURIA tá no TOP ${currentTeamStats.worldRanking} MUNDIAL, mano! No ranking atual do HLTV, nosso esquadrão tá subindo cada vez mais! 🚀 Com muito trabalho, logo logo estaremos no TOP 5 novamente!`
   },
   {
-    keyword: ['histórico', 'últimos jogos', 'resultado'],
+    keyword: ['histórico'],
     response: `Nos últimos ${currentTeamStats.recentWins + currentTeamStats.recentLosses} jogos tivemos ${currentTeamStats.recentWins} vitórias e ${currentTeamStats.recentLosses} derrotas! O time tá se ajustando mas tá mostrando um CS muito bom! 🔥 Cada dia a equipe tá mais entrosada e mais forte!`
-  },
-  {
-    keyword: ['melhor jogador', 'destaque', 'mvp', 'quem é o melhor'],
-    response: 'KSCERATO continua sendo o MONSTRO do time! O cara tá jogando muito! A precisão dele é absurda, não perde duel, não erra spray, é um alien! 👽 Mas o yuurih também tá destruindo demais nos últimos jogos!'
   },
   {
     keyword: ['mapa', 'mapas'],

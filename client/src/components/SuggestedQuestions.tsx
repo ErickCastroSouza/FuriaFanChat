@@ -90,7 +90,7 @@ export default function SuggestedQuestions({
           key={index}
           variant="outline"
           size="sm"
-          className="text-[11px] sm:text-xs md:text-sm px-2 sm:px-3 py-0.5 sm:py-1 border-[hsl(var(--furia-teal))] text-[hsl(var(--furia-teal))] hover:bg-[hsl(var(--furia-teal))] hover:text-white transition-colors suggested-question min-h-[24px] sm:min-h-[28px] rounded-full"
+          className="text-[11px] sm:text-xs md:text-sm px-2 sm:px-3 py-0.5 sm:py-1 border-[hsl(var(--furia-blue))] text-[hsl(var(--furia-blue))] hover:bg-[hsl(var(--furia-blue))] hover:text-black transition-colors suggested-question min-h-[24px] sm:min-h-[28px] rounded-full"
           onClick={() => onSelectQuestion(question)}
         >
           {question}

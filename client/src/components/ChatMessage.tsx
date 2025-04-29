@@ -14,7 +14,7 @@ export default function ChatMessage({ message }: ChatMessageProps) {
   return (
     <div className={`flex items-start ${isBot ? "" : "justify-end"} mb-4`}>
       {isBot && (
-        <Avatar className="w-8 h-8 bg-[hsl(var(--furia-teal))] mr-3 flex-shrink-0">
+        <Avatar className="w-8 h-8 bg-[hsl(var(--furia-light-gray))] mr-3 flex-shrink-0">
           <AvatarFallback className="text-xs">
             <FaRobot />
           </AvatarFallback>
@@ -25,14 +25,14 @@ export default function ChatMessage({ message }: ChatMessageProps) {
         <div 
           className={`${
             isBot 
-              ? "bg-[hsl(var(--furia-teal))] rounded-lg rounded-tl-none chat-bubble-bot" 
-              : "bg-[hsl(var(--furia-button))] rounded-lg rounded-tr-none chat-bubble-user"
+              ? "bg-[hsl(var(--furia-light-gray))] border border-[hsl(var(--furia-blue))] rounded-lg rounded-tl-none chat-bubble-bot" 
+              : "bg-[hsl(var(--furia-blue))] rounded-lg rounded-tr-none chat-bubble-user"
           } p-2 sm:p-3`}
         >
-          <div className="font-inter whitespace-pre-wrap text-[13px] sm:text-base">{message.text}</div>
+          <div className="font-inter whitespace-pre-wrap text-[13px] text-[hsl(var(--text-chat))] sm:text-base">{message.text}</div>
         </div>
         
-        <span className={`text-[10px] sm:text-xs text-[hsl(var(--text-dark))] mt-1 block ${
+        <span className={`text-[10px] sm:text-xs text-[hsl(var(--furia-chat))] mt-1 block ${
           isBot ? "" : "text-right"
         }`}>
           {message.time}
