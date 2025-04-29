@@ -1,5 +1,9 @@
 <h1>🐺 FuriaFanChat</h1>
 
+<h1>🔗 Link do projeto</h1>
+
+<a href="https://furia-fan-chat.vercel.app/" aqui />
+
 <p>Landing page de chatbot dedicada aos fãs do time FURIA de CS:GO, oferecendo uma experiência imersiva e interativa para quem quer ficar ainda mais próximo do time.</p>
 
 <br>
